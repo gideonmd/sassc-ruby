@@ -20,8 +20,8 @@ if enable_config('static-stdlib', false)
 end
 
 if enable_config('march-tune-native', false)
-  $CFLAGS << ' -march=native -mtune=native'
-  $CXXFLAGS << ' -march=native -mtune=native'
+  $CFLAGS << ' -mtune=native'
+  $CXXFLAGS << ' -mtune=native'
 end
 
 # darwin nix clang doesn't support lto
